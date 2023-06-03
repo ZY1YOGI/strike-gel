@@ -10,10 +10,10 @@ export default function Results() {
                     <p>مـن الأستـخـدام</p>
                 </div>
 
-                <div className="box">
-                    <div className="text">
-                        <h2>الاسبوع الأول</h2>
-                        <div className="content">
+                <div className="results-info">
+                    <div className="box">
+                        <h2>ألاسبوع الأول</h2>
+                        <div className="text">
                             <p>تـأخيــــر القــــذف : مــن ١٥ الـي ٢٠ دقيقة</p>
                             <p>زيادة الطــول : من ٣.٥ سم الي ٤.٥ سم</p>
                             <p>زيــادة الانتصــــــاب بنسبــــة ٪٤.٠ الي ٪١٠٠</p>
@@ -23,10 +23,10 @@ export default function Results() {
                     <img className="img-sm" src={img4} alt="" />
                 </div>
 
-                <div className="box">
-                    <div className="text">
-                        <h2> الاسبوع الثاني</h2>
-                        <div className="content">
+                <div className="results-info">
+                    <div className="box">
+                        <h2> ألاسبوع الثاني</h2>
+                        <div className="text">
                             <p>تأخيــــر القــــذف : من ٢٥ الي ٤٠ دقيقــة</p>
                             <p>زيــادة الطــول : مـــن ٥ سـم الي ٧ سـم </p>
                             <p>زيـــادة الانتصـــــاب بنـسبــــة ٪٧٠ الي ٪١٠٠ </p>

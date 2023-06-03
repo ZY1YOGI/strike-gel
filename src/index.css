@@ -11,8 +11,10 @@
 }
 
 html {
-  scroll-behavior: smooth !important;
+  @apply !scroll-smooth;
 }
+
+
 
 li {
   list-style: none;
@@ -21,8 +23,6 @@ li {
 .btn {
   @apply rounded-xl text-[#fff] font-bold text-3xl bg-cover bg-bottom inline-block py-4 px-16 bg-[url('@/assets/images/btn-red-bg.png')];
 }
-
-
 
 
 /* SECTION hero */
@@ -69,22 +69,13 @@ li {
 }
 
 .hero-footer .line {
-  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-[0.075em];
+  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-[0.075em] md:text-xl;
 }
 
 .hero-footer .line span {
   @apply min-w-[10px] h-12 bg-[#e60f0f] ml-2 md:ml-3.5 rounded-[3px];
 }
 /* End SECTION hero */
-
-
-
-
-
-
-
-
-
 
 
 /* SECTION results */
@@ -106,46 +97,27 @@ li {
 }
 
 
-
-
-.results .content .box {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 25px;
+.results-info {
+  @apply flex justify-between mb-6 container mx-auto;
 }
 
-.results .content .box img {
-  width: 80px;
-  height: 140px;
+.results-info img {
+  @apply w-20 h-36 md:w-24 md:h-40;
 }
 
-.results .content .box img.img-sm {
-  width: 58px;
-  height: 115px;
-  margin-left: 9px;
+.results-info img.img-sm {
+  @apply w-14 h-28 ml-3 md:w-16 md:h-32;
 }
 
-.results .content .box .text h2 {
-  color: #fff;
-  margin-bottom: 10px;
-  font-weight: 500;
+.results-info .box h2 {
+  @apply text-white mb-2.5 font-medium;
 }
 
-.results .content .box .text .content {
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  line-height: 1.6;
-  font-weight: 100;
-  font-size: 15px;
+.results-info .box .text {
+  @apply flex flex-col text-white font-thin text-base md:text-2xl md:tracking-wide
 }
 
 /* End SECTION results */
-
-
-
-
-
 
 
 
