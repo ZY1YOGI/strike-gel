@@ -114,7 +114,7 @@ li {
 }
 
 .results-info .box .text {
-  @apply flex flex-col text-white font-thin text-base md:text-2xl md:tracking-wide
+  @apply flex flex-col text-white font-thin text-[15px] md:text-2xl md:tracking-wide whitespace-nowrap
 }
 
 /* End SECTION results */
