@@ -39,7 +39,7 @@ li {
 }
 
 .hero-img-product img {
-  @apply absolute right-5 w-48 md:w-80;
+  @apply absolute right-5 w-48 md:w-96;
 }
 /* hero-header */
 .hero-header {
@@ -61,7 +61,7 @@ li {
 }
 
 .hero-arrow-img {
-  @apply w-[350px] pl-5
+  @apply w-[350px] pl-8 md:pl-0 md:w-[450px]
 }
 /* hero-footer */
 .hero-footer {
@@ -126,8 +126,7 @@ li {
 
 
 
-
-/* start section-3 */
+/* SECTION section */
 .section-3 {
   text-align: center;
   padding: 30px 0;
@@ -194,6 +193,23 @@ li {
   font-size: 15px;
   font-weight: 700;
 }
+/* End SECTION section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* start section-4*/
 .section-4 {
