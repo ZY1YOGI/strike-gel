@@ -14,8 +14,6 @@ html {
   @apply !scroll-smooth;
 }
 
-
-
 li {
   list-style: none;
 }
@@ -23,7 +21,6 @@ li {
 .btn {
   @apply rounded-xl text-[#fff] font-bold text-3xl bg-cover bg-bottom inline-block py-4 px-16 bg-[url('@/assets/images/btn-red-bg.png')];
 }
-
 
 /* SECTION hero */
 .hero {
@@ -55,17 +52,16 @@ li {
   @apply before:absolute before:-bottom-2.5 before:right-0 before:w-[93%] before:h-[3px] before:bg-[#111] before:rounded-[30%];
 }
 
-
 .hero-header h4 {
   @apply text-xl font-black whitespace-nowrap;
 }
 
 .hero-arrow-img {
-  @apply w-[350px] pl-8 md:pl-0 md:w-[450px]
+  @apply w-[365px] pl-12 md:pl-0 md:w-[450px]
 }
 /* hero-footer */
 .hero-footer {
-  @apply text-center container pt-4 px-2.5 pb-5 md:pr-12 
+  @apply text-center container pt-16 px-2.5 pb-5 md:pt-8 md:pr-12 
 }
 
 .hero-footer .line {
@@ -73,13 +69,13 @@ li {
 }
 
 .hero-footer .line span {
-  @apply min-w-[10px] h-12 bg-[#e60f0f] ml-2 md:ml-3.5 rounded-[3px];
+  @apply w-[10px] h-12 bg-[#e60f0f] ml-2 md:ml-3.5 rounded-[3px];
 }
 /* End SECTION hero */
 
 
-/* SECTION results */
 
+/* SECTION results */
 .results {
   @apply relative top-[-50px] w-full bg-cover bg-center bg-[url('@/assets/images/bg-red.jpg')] rounded-b-[50%_3%] z-20 px-2.5 pt-12 pb-5;
 }
@@ -95,7 +91,6 @@ li {
 .results-header p {
   @apply text-white text-[22px] font-thin md:tracking-wider;
 }
-
 
 .results-info {
   @apply flex justify-between mb-6 container mx-auto;
@@ -114,130 +109,83 @@ li {
 }
 
 .results-info .box .text {
-  @apply flex flex-col text-white font-thin text-[15px] md:text-2xl md:tracking-wide whitespace-nowrap
+  @apply flex flex-col text-white font-thin text-[14.8px] md:text-2xl md:tracking-wide whitespace-nowrap
 }
-
 /* End SECTION results */
 
 
 
-
-
-
-
-
-/* SECTION section */
-.section-3 {
-  text-align: center;
-  padding: 30px 0;
-  background: url('@/assets/images/bg-hero.jpg');
-  background-size: cover;
-  background-position: right;
-  position: relative;
-  border-bottom-left-radius: 50% 3%;
-  border-bottom-right-radius: 50% 3%;
-  z-index: 18;
-  top: -70px;
+/* SECTION advise */
+.advise {
+  @apply text-center py-8 bg-cover bg-right relative bg-[url('@/assets/images/bg-hero.jpg')] rounded-b-[50%_3%] top-[-70px] z-10;
 }
 
-.section-3 .contanier {
-  display: flex;
-  justify-content: space-between;
-  text-align: right;
-  position: relative;
-  margin-bottom: 30px;
+.advise-container {
+  @apply flex justify-between text-right relative mb-8 container mx-auto;
 }
 
-.section-3 .contanier .div-img {
-  position: absolute;
-  top: 0;
-  left: 10px;
+.advise-header {
+  @apply pt-2.5 pr-2.5 pb-5 pl-8;
 }
 
-.section-3 .contanier .div-img img {
-  width: 190px;
+.advise-header .head {
+  @apply mb-8 text-xl md:text-5xl;
 }
 
-.section-3 .contanier .bottom-sec {
-  padding: 10px 10px 20px 30px;
-  ;
+.advise-header .head p {
+  @apply text-[#111] font-extrabold;
 }
 
-.section-3 .contanier .bottom-sec .head {
-  margin-bottom: 30px;
-
+.advise-header .head span {
+  @apply text-[#DA0000] font-black;
 }
 
-.section-3 .contanier .bottom-sec .head p {
-  font-size: 21px;
-  color: #111;
-  font-weight: 900;
+.advise-header .all-line {
+  @apply pr-2 mb-10 md:pr-5 md:tracking-wider space-y-4 text-base font-bold;
 }
 
-.section-3 .contanier .bottom-sec .head span {
-  font-size: 22px;
-  color: #DA0000;
-  font-weight: 1000;
+.advise-header .all-line .line {
+  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-[0.075em] md:text-2xl;
 }
 
-.section-3 .contanier .bottom-sec .all-line {
-  padding-right: 15px;
-  margin-bottom: 40px;
+.advise-header .all-line .line span {
+  @apply w-[3px] h-14 bg-[#e60f0f] ml-2 md:ml-5 rounded-[3px] md:w-[10px];
 }
 
-.section-3 .contanier .bottom-sec .all-line .line {
-  margin-bottom: 15px;
-}
-
-.section-3 .contanier .bottom-sec .all-line .line .row li {
-  font-size: 15px;
-  font-weight: 700;
+.advise-container img {
+  @apply w-48 md:w-72 top-0 left-1 absolute md:left-8;
 }
 /* End SECTION section */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* start section-4*/
-.section-4 {
-  top: -100px;
-  z-index: 16;
-  text-align: center;
+/* SECTION how */
+.how {
+  @apply top-[-85px] px-2.5 pt-12 pb-5 relative bg-cover bg-center bg-[url('@/assets/images/bg-red.jpg')] rounded-b-[50%_3%] text-center whitespace-nowrap text-white
 }
 
-.section-4 .top-sec h2 {
-  font-size: 30px;
-  color: #fff;
+.how .how-header h2 {
+  @apply text-2xl md:text-4xl md:tracking-wider font-black
 }
 
-.section-4 .botm-sec img {
-  width: 150px;
-  display: inline;
+.how .how-footer img {
+  @apply inline-block w-40 md:w-60;
 }
 
-.section-4 .botm-sec .text {
-  display: flex;
-  flex-direction: column;
+.how .how-footer .text {
+  @apply flex flex-col;
 }
 
-.section-4 .botm-sec .text p {
-  color: #fff;
-  font-size: 16.5px;
-  line-height: 2.4;
+.how .how-footer .text p {
+  @apply text-base leading-9 md:text-xl md:leading-10 md:tracking-wider
 }
+/* End SECTION how */
+
+
+
+
+
+
 
 .last-sec {
   position: relative;
