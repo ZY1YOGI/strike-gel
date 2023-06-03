@@ -69,7 +69,7 @@ li {
 }
 
 .hero-footer .line {
-  @apply text-right flex items-center mb-4 text-lg font-semibold md:tracking-[0.075em];
+  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-[0.075em];
 }
 
 .hero-footer .line span {
@@ -87,63 +87,48 @@ li {
 
 
 
-/* start two-sec */
+/* SECTION results */
 
-.two-sec {
-  position: relative;
-  top: -50px;
-  width: 100%;
-  background: url('@/assets/images/bg-red.jpg');
-  background-size: cover;
-  background-position: center;
-  padding: 50px 10px 20px;
-  z-index: 20;
-  border-bottom-left-radius: 50% 3%;
-  border-bottom-right-radius: 50% 3%;
+.results {
+  @apply relative top-[-50px] w-full bg-cover bg-center bg-[url('@/assets/images/bg-red.jpg')] rounded-b-[50%_3%] z-20 px-2.5 pt-12 pb-5;
 }
 
-.two-sec .head-sec {
-  text-align: center;
-  margin-bottom: 30px;
-  padding: 20px 0 0;
+.results-header {
+  @apply text-center mb-8 pt-5 md:tracking-wider;
 }
 
-.two-sec .head-sec h3 {
-  color: #fff;
-  font-size: 35px;
-  font-weight: 900;
+.results-header h3 {
+  @apply text-white text-4xl font-black;
 }
 
-.two-sec .head-sec p {
-  color: #fff;
-  font-size: 22px;
-  font-weight: 100;
+.results-header p {
+  @apply text-white text-[22px] font-thin;
 }
 
-.two-sec .content .box {
+.results .content .box {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
 }
 
-.two-sec .content .box img {
+.results .content .box img {
   width: 80px;
   height: 140px;
 }
 
-.two-sec .content .box img.img-sm {
+.results .content .box img.img-sm {
   width: 58px;
   height: 115px;
   margin-left: 9px;
 }
 
-.two-sec .content .box .text h2 {
+.results .content .box .text h2 {
   color: #fff;
   margin-bottom: 10px;
   font-weight: 500;
 }
 
-.two-sec .content .box .text .content {
+.results .content .box .text .content {
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -151,6 +136,20 @@ li {
   font-weight: 100;
   font-size: 15px;
 }
+
+/* End SECTION results */
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* start section-3 */
@@ -618,7 +617,7 @@ display: none;
 
 /* width */
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 16px;
 }
 
 /* Track */
