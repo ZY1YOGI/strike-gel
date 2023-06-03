@@ -64,7 +64,7 @@ li {
 }
 /* hero-footer */
 .hero-footer {
-  @apply text-center container pt-[50px] px-2.5 pb-5 md:pt-8 md:pr-12 md:container md:mx-auto
+  @apply text-center container pt-[55px] px-2.5 pb-5 md:pt-8 md:pr-12 md:container md:mx-auto
 }
 
 .hero-footer .line {
