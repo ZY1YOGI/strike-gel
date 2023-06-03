@@ -33,7 +33,7 @@ export default function Form() {
     <form onSubmit={onSubmitForm} action="https://api.sheetmonkey.io/form/nv3q7KdX21CFQnrb6c9GCT" method="post" id="form" className="form">
 
       <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-
+      <input  type="hidden"  name="x-sheetmonkey-redirect"  value={`${window.location.hostname}/thanks`} />
       <div className="form-control">
         <input type="text" name="name" id="name" placeholder="الاسم" value={name} onChange={e => setName(e.target.value)} />
         <small>{errorName}</small>
