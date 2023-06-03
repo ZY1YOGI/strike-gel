@@ -13,7 +13,7 @@
 html {
   @apply !scroll-smooth;
 }
-body {
+#root {
   height: 100vh !important;
 }
 
