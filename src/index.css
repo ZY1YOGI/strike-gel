@@ -61,7 +61,7 @@ li {
 }
 
 .hero-arrow-img {
-  @apply w-[350px]
+  @apply w-[350px] pl-5
 }
 /* hero-footer */
 .hero-footer {
