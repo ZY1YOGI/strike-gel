@@ -13,6 +13,9 @@
 html {
   @apply !scroll-smooth;
 }
+body {
+  height: 100vh !important;
+}
 
 li {
   list-style: none;
@@ -48,7 +51,7 @@ li {
 }
 
 .hero-header-subtitle {
-  @apply mb-5 max-sm:-tracking-wide py-2;
+  @apply py-2 mb-5 max-sm:-tracking-wide;
   @apply before:absolute before:-bottom-2.5 before:right-0 before:w-[90%] before:h-[3px] before:bg-[#111] before:rounded-[30%] md:before:w-[60%];
 }
 
@@ -61,11 +64,11 @@ li {
 }
 /* hero-footer */
 .hero-footer {
-  @apply text-center container pt-[25px] px-2.5 pb-5 md:pt-8 md:pr-12  md:container md:mx-auto
+  @apply text-center container pt-[50px] px-2.5 pb-5 md:pt-8 md:pr-12 md:container md:mx-auto
 }
 
 .hero-footer .line {
-  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-wide md:text-3xl whitespace-nowrap md:space-y-1 md:mb-6;
+  @apply flex items-center mb-4 text-base font-semibold text-right md:tracking-wide md:text-3xl whitespace-nowrap md:space-y-1 md:mb-6 text-[17px];
 }
 
 .hero-footer .line span {
@@ -81,11 +84,11 @@ li {
 }
 
 .results-header {
-  @apply text-center mb-8 pt-5;
+  @apply pt-5 mb-8 text-center;
 }
 
 .results-header h3 {
-  @apply text-white text-4xl font-black md:tracking-wider md:text-6xl md:my-5;
+  @apply text-4xl font-black text-white md:tracking-wider md:text-6xl md:my-5;
 }
 
 .results-header p {
@@ -93,7 +96,7 @@ li {
 }
 
 .results-info {
-  @apply flex justify-between mb-6 container mx-auto;
+  @apply container flex justify-between mx-auto mb-6;
 }
 
 .results-info img {
@@ -101,7 +104,7 @@ li {
 }
 
 .results-info img.img-sm {
-  @apply w-14 h-28 ml-3 md:ml-5 md:w-28 md:h-48;
+  @apply ml-3 w-14 h-28 md:ml-5 md:w-28 md:h-48;
 }
 
 .results-info .box h2 {
@@ -121,7 +124,7 @@ li {
 }
 
 .advise-container {
-  @apply flex justify-between text-right relative mb-8 container mx-auto;
+  @apply container relative flex justify-between mx-auto mb-8 text-right;
 }
 
 .advise-header {
@@ -141,11 +144,11 @@ li {
 }
 
 .advise-header .all-line {
-  @apply pr-2 mb-10 md:pr-5 md:tracking-wider space-y-4 font-bold md:space-y-6;
+  @apply pr-2 mb-10 space-y-4 font-bold md:pr-5 md:tracking-wider md:space-y-6;
 }
 
 .advise-header .all-line .line {
-  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-wider md:text-4xl;
+  @apply flex items-center mb-4 text-base font-semibold text-right md:tracking-wider md:text-4xl;
 }
 
 .advise-header .all-line .line span {
@@ -153,7 +156,7 @@ li {
 }
 
 .advise-container img {
-  @apply w-48 md:w-96 top-0 left-1 absolute md:left-8;
+  @apply absolute top-0 w-48 md:w-96 left-1 md:left-8;
 }
 /* End SECTION section */
 
@@ -173,7 +176,7 @@ li {
 }
 
 .how .how-footer .text {
-  @apply flex flex-col;
+  @apply flex flex-col mb-5;
 }
 
 .how .how-footer .text p {
@@ -185,7 +188,7 @@ li {
 
 /* SECTION contact */
 .contact {
-  @apply w-full bg-cover bg-right bg-[url('@/assets/images/bg-hero.jpg')] text-center overflow-hidden;
+  @apply w-full bg-cover bg-center bg-[url('@/assets/images/bg-hero.jpg')] text-center overflow-hidden relative -top-[100px];
 }
 
 
@@ -196,29 +199,29 @@ li {
 
 
 .contact-header img {
-  @apply w-[205px] absolute -top-10 -left-28 z-30;
-  @apply md:w-[250px] md:-left-48 lg:w-[350px] md:-top-20;
-}
+  @apply w-[205px] absolute -top-12 -left-28 z-30;
+  @apply md:w-[250px] md:-left-48 lg:w-[350px] md:-top-24;
+} 
 
 .container-prices {
-  @apply flex flex-col rounded-lg overflow-hidden;
+  @apply flex flex-col overflow-hidden leading-none rounded-lg;
 }
 
 .contact-header .price-title {
-  @apply bg-white p-1 text-3xl md:text-5xl lg:text-6xl text-center block;
+  @apply block text-3xl text-center bg-white md:text-5xl lg:text-6xl;
 }
 
 .contact-header .price {
-  @apply text-white text-[100px] font-semibold font-[sans-serif] md:text-9xl md:text-[10rem] md:py-8;
+  @apply text-white text-[100px] font-semibold font-[sans-serif] md:text-9xl md:text-[10rem] md:py-8 py-3;
 }
 
 .contact-header .price-old {
-  @apply text-white text-xl relative p-1 inline-block overflow-hidden md:text-3xl;
+  @apply relative inline-block overflow-hidden text-xl text-white md:text-3xl;
   @apply after:absolute after:top-1/2 after:left-1/2 after:w-[50%] after:h-0.5 after:bg-[#dfae45] after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-[5deg];
 }
 
 .contact-footer {
-  @apply md:mt-20 md:mb-8;
+  @apply pt-6 md:mt-20 md:mb-8;
 }
 
 .contact-footer h4 {
@@ -230,7 +233,7 @@ li {
 }
 
 .contact-footer .contact-form h2 {
-  @apply bg-white text-lg py-2;
+  @apply py-2 text-lg bg-white;
 }
 
 .contact-form {
@@ -251,15 +254,15 @@ li {
 }
 
 .form-control small {
-  @apply text-white absolute bottom-0 right-0 md:text-lg md:-bottom-2;
+  @apply absolute bottom-0 right-0 text-white md:text-lg md:-bottom-2;
 }
 
 .form-btn {
-  @apply cursor-pointer hover:opacity-75;
+  @apply cursor-pointer hover:opacity-75 !bg-[#0ec200] bg-none;
 }
 
 .contact .banner {
-  @apply mx-auto px-3 rounded-md;
+  @apply px-3 mx-auto rounded-md;
 }
 
 /* End SECTION contact */
@@ -310,7 +313,7 @@ main {
 }
 /* ============================ */
 @media (max-width: 800px) {
-  body {
+  main {
     background-size: auto;
   }
   .thanks-container h1 {
