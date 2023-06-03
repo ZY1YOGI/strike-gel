@@ -14,131 +14,77 @@ html {
   scroll-behavior: smooth !important;
 }
 
-
-body {
-  @apply h-screen;
-}
 li {
   list-style: none;
 }
 
-
-.hero {
-  width: 100%;
-  padding-bottom: 30px;
-  background: url('@/assets/images/bg-hero.jpg');
-  background-size: cover;
-  background-position: right;
-  position: relative;
-  border-bottom-left-radius: 50% 3%;
-  border-bottom-right-radius: 50% 3%;
-  z-index: 100;
-}
-
-.hero .content {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero .content .top-sec {
-  width: 64%;
-  padding: 10px 10px 35px 20px;
-}
-
-.hero .content .arrow-img {
-  width: 350px;
-}
-
-.hero .content .top-sec h2 {
-  color: #DA0000;
-  font-size: 24px;
-  font-weight: 1000;
-  position: relative;
-}
-
-.hero .content .top-sec h2.border-btm {
-  margin-bottom: 20px;
-}
-
-.hero .content .top-sec .border-btm::before {
-  content: '';
-  position: absolute;
-  bottom: -10px;
-  right: 0;
-  width: 93%;
-  height: 3px;
-  background-color: #111;
-  border-radius: 30%;
-
-}
-
-.hero .content .top-sec h4 {
-  font-size: 24px;
-  font-weight: 900;
-  line-height: 1.1;
-}
-
-.hero .img-and-product {
-  position: absolute;
-  left: -180px;
-  width: 320px;
-  height: 350px;
-  background: url('@/assets/images/bg-red.jpg');
-  background-size: cover;
-  border-radius: 0% 0% 100% 00%;
-}
-
-.hero .img-and-product .product {
-  position: absolute;
-  top: -10px;
-  right: 20px;
-  width: 195px;
-  z-index: 10;
-}
-
-
-
-
-/* start ul bottom hero sec */
-.bottom-sec {
-  text-align: center;
-  padding: 14px 10px 20px 10px;
-}
-
-.bottom-sec .line {
-  text-align: right;
-  display: flex;
-  align-items: center;
-  margin-bottom: 18px;
-
-  font-weight: 700;
-  line-height: 1.5;
-  color: #111;
-  font-size: 17px;
-}
-
-.bottom-sec .line:last-child {
-  margin-bottom: 25px;
-}
-
-.bottom-sec .line span {
-  min-width: 9px;
-  height: 40px;
-  background-color: #e60f0f;
-  margin-left: 10px;
-  border-radius: 6px;
-}
-
 .btn {
-  padding: 15px 70px;
-  border-radius: 10px;
-  color: #fff;
-  font-size: 30px;
-  font-weight: bolder;
-  background: url('@/assets/images/btn-red-bg.png');
-  background-size: cover;
-  background-position: bottom;
+  @apply rounded-xl text-[#fff] font-bold text-3xl bg-cover bg-bottom inline-block py-4 px-16 bg-[url('@/assets/images/btn-red-bg.png')];
 }
+
+
+
+
+/* SECTION hero */
+.hero {
+  @apply w-full pb-8 bg-cover bg-right relative z-50 rounded-b-[50%_3%] bg-[url('@/assets/images/bg-hero.jpg')];
+}
+
+.hero-content {
+  @apply relative overflow-hidden;
+}
+
+.hero-img-product {
+  @apply absolute -left-40 w-80 h-[350px] bg-[url('@/assets/images/bg-red.jpg')] bg-cover -z-10 rounded-br-[100%] md:-left-14;
+}
+
+.hero-img-product img {
+  @apply absolute right-5 w-48 md:w-72;
+}
+/* hero-header */
+.hero-header {
+  @apply w-[60%] px-2.5 py-5;
+}
+
+.hero-header h2 {
+  @apply text-[#DA0000] text-2xl md:text-3xl font-black relative md:tracking-wider;
+}
+
+.hero-header-subtitle {
+  @apply mb-5;
+  @apply before:absolute before:-bottom-2.5 before:right-0 before:w-[93%] before:h-[3px] before:bg-[#111] before:rounded-[30%];
+}
+
+
+.hero-header h4 {
+  @apply text-2xl font-black;
+}
+
+.hero-arrow-img {
+  @apply w-[350px]
+}
+/* hero-footer */
+.hero-footer {
+  @apply text-center container pt-4 px-2.5 pb-5 md:pr-12 
+}
+
+.hero-footer .line {
+  @apply text-right flex items-center mb-4 text-lg font-semibold md:tracking-[0.075em];
+}
+
+.hero-footer .line span {
+  @apply min-w-[10px] h-12 bg-[#e60f0f] ml-2 md:ml-3.5 rounded-[3px];
+}
+/* End SECTION hero */
+
+
+
+
+
+
+
+
+
 
 
 /* start two-sec */
@@ -305,7 +251,6 @@ li {
 
 .last-sec {
   position: relative;
-  bottom: 150px;
   z-index: 14;
   border-bottom-left-radius: 0% 0%;
   border-bottom-right-radius: 0% 0%;
@@ -667,4 +612,24 @@ display: none;
   outline: none;
   padding: 8px 50px;
   margin: auto;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 2px 6px white;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #970300, #ff0000, #970300);
+  border-radius: 10px;
+  height: 100px;
 }
