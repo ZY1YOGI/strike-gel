@@ -40,7 +40,7 @@ li {
 }
 /* hero-header */
 .hero-header {
-  @apply w-[60%] px-2.5 py-5;
+  @apply w-[60%] px-2 py-5;
 }
 
 .hero-header h2 {
@@ -48,7 +48,7 @@ li {
 }
 
 .hero-header-subtitle {
-  @apply mb-5;
+  @apply mb-5 !text-xl max-sm:!-tracking-wide;
   @apply before:absolute before:-bottom-2.5 before:right-0 before:w-[93%] before:h-[3px] before:bg-[#111] before:rounded-[30%];
 }
 
@@ -65,7 +65,7 @@ li {
 }
 
 .hero-footer .line {
-  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-[0.075em] md:text-xl;
+  @apply text-right flex items-center mb-4 text-base font-semibold md:tracking-[0.075em] md:text-xl whitespace-nowrap;
 }
 
 .hero-footer .line span {
@@ -183,12 +183,6 @@ li {
 
 
 
-
-
-
-
-
-
 /* SECTION contact */
 .contact {
   @apply w-full bg-cover bg-right bg-[url('@/assets/images/bg-hero.jpg')] text-center overflow-hidden;
@@ -196,23 +190,22 @@ li {
 
 
 .contact-header {
-  @apply relative w-[300px] bg-[url('@/assets/images/bg-red.jpg')] bg-center bg-cover pb-4 pl-14 rounded-lg mx-auto mt-20 mb-9;
-  @apply md:container ;
+  @apply relative w-[300px] bg-[url('@/assets/images/bg-red.jpg')] bg-center bg-cover pb-4 pl-14 rounded-lg mx-auto mt-20 mb-9 lg:pl-0;
+  @apply md:container;
 }
 
 
 .contact-header img {
   @apply w-[205px] absolute -top-10 -left-28 z-30;
-  @apply md:w-[250px] md:left-0 lg:left-32 lg:w-[300px];
+  @apply md:w-[250px] md:left-0 lg:left-32 lg:w-[325px];
 }
 
-
 .container-prices {
-  @apply flex flex-col;
+  @apply flex flex-col rounded-lg overflow-hidden;
 }
 
 .contact-header .price-title {
-  @apply bg-white p-1 text-3xl md:text-5xl lg:text-6xl
+  @apply bg-white p-1 text-3xl md:text-5xl lg:text-6xl text-center block
 }
 
 .contact-header .price {
@@ -224,9 +217,6 @@ li {
   @apply after:absolute after:top-1/2 after:left-1/2 after:w-full after:h-0.5 after:bg-[#dfae45] after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-[5deg];
 }
 
-
-
-
 .contact-footer h4 {
   @apply text-[#111] text-xl font-extrabold md:text-2xl lg:text-3xl;
 }
@@ -237,97 +227,47 @@ li {
 
 .contact-footer .contact-form h2 {
   @apply bg-white text-lg py-2;
-} 
-
-.contact-footer .contact-form {
-  background: url('@/assets/images/bg-red.jpg');
-  background-position: center;
-  background-size: cover;
 }
 
-.contact-footer  .banner img {
-  width: 100%;
+.contact-form {
+  @apply bg-center bg-cover bg-[url('@/assets/images/bg-red.jpg')];
+}
+
+.form {
+  @apply py-8 px-10 container mx-auto md:px-[25%];
+}
+
+.form-control {
+  @apply mb-2.5 pb-5 relative;
+}
+
+.form-control input {
+  @apply border-2 border-white rounded-md block text-sm p-2.5 w-full;
+  @apply focus:outline-0 focus:border-[#777];
+}
+
+.form-control small {
+  @apply text-white absolute bottom-0 right-0;
+}
+
+.form-btn {
+  @apply cursor-pointer hover:opacity-75;
+}
+
+.contact .banner {
+  @apply mx-auto px-3 rounded-md;
 }
 
 /* End SECTION contact */
 
 
-
-
-.form {
-  padding: 30px 40px;
-}
-
-.form-control {
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.form-control label {
-  display: inline-block;
-  margin-bottom: 5px;
-}
-
-.form-control input {
-  border: 2px solid #f0f0f0;
-  border-radius: 4px;
-  display: block;
-  font-family: inherit;
-  font-size: 14px;
-  padding: 10px;
-  width: 100%;
-}
-
-.form-control input:focus {
-  outline: 0;
-  border-color: #777;
-}
-
-.form-control.success input {
-  border-color: #2ecc71;
-}
-
-.form-control.error input {
-  border-color: #e74c3c;
-  font-family: sans-serif;
-}
-
-.form-control small {
-  color: #e74c3c;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  visibility: hidden;
-}
-
-.form-control.error small {
-  visibility: visible;
-}
-
-.last-sec .botm-sec .my-form form .btn {
-  margin: auto;
-  background: #0EC200;
-  border: none;
-  outline: none;
-  padding: 8px 50px;
-  margin: auto;
-}
-
-
-
-/* width */
 ::-webkit-scrollbar {
   width: 16px;
 }
-
-/* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 2px 6px white;
   border-radius: 10px;
 }
-
-/* Handle */
 ::-webkit-scrollbar-thumb {
   background-image: linear-gradient(180deg, #970300, #ff0000, #970300);
   border-radius: 10px;
