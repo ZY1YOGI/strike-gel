@@ -36,7 +36,7 @@ export default function Form() {
       <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
       <input  type="hidden"  name="x-sheetmonkey-redirect" value={`${document.URL}thanks`} />
       <div className="form-control">
-        <input type="text" name="name" id="name" placeholder="الاسم" value={name} onChange={e => setName(e.target.value)} maxLength={5} />
+        <input type="text" name="name" id="name" placeholder="الاسم" value={name} onChange={e => setName(e.target.value)} maxLength={25} />
         <small>{errorName}</small>
       </div>
 
