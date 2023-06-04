@@ -17,7 +17,7 @@ export default function Form() {
     if (name == "")
       return setErrorName("الرجاء ادخال الاسم")
 
-    if (name.length < 2)
+    if (name.length < 1)
       return setErrorName("الاسم اقل من 1 احرف")
 
     if (phone == "")
