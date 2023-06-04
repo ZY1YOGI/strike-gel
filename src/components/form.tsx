@@ -17,20 +17,21 @@ export default function Form() {
     if (name == "")
       return setErrorName("الرجاء ادخال الاسم")
 
-    if (name.length < 3)
-      return setErrorName("الاسم اقل من 3 احرف")
+    if (name.length < 2)
+      return setErrorName("الاسم اقل من 1 احرف")
 
     if (phone == "")
       return setErrorPhone("الرجاء ادخال رقم الهاتف للتواصل")
 
     if (!/^01[0-2,5]{1}[0-9]{8}$/.test(phone))
       return setErrorPhone("الرجاء ادخال رقم صحيح");
-    (document.getElementById("form") as HTMLFormElement).submit()
+
+    return (document.getElementById("form") as HTMLFormElement).submit()
   }
 
   return (
 
-    <form onSubmit={onSubmitForm} action="https://api.sheetmonkey.io/form/nv3q7KdX21CFQnrb6c9GCT" method="post" id="form" className="form">
+    <form action="https://api.sheetmonkey.io/form/nv3q7KdX21CFQnrb6c9GCT" method="post" onSubmit={onSubmitForm} target="_blank" id="form" className="form">
 
       <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
       <input  type="hidden"  name="x-sheetmonkey-redirect" value={`${document.URL}thanks`} />

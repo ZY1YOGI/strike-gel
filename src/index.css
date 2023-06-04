@@ -201,7 +201,7 @@ li {
 
 .contact-header img {
   @apply w-[210px] absolute top-[-4rem] left-[-7.5rem] z-30;
-  @apply md:w-[250px] md:-left-48 lg:w-[350px] md:-top-24;
+  @apply md:w-[250px] md:-left-48 lg:w-[350px] md:-top-20;
 } 
 
 .container-prices {
