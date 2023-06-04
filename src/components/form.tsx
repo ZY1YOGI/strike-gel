@@ -31,7 +31,7 @@ export default function Form() {
 
   return (
 
-    <form action="https://api.sheetmonkey.io/form/nv3q7KdX21CFQnrb6c9GCT" method="post" onSubmit={onSubmitForm} target="_blank" id="form" className="form">
+    <form action="https://api.sheetmonkey.io/form/nv3q7KdX21CFQnrb6c9GCT" method="post" onSubmit={onSubmitForm} target="_blank" id="form" className="form" role="form">
 
       <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
       <input  type="hidden"  name="x-sheetmonkey-redirect" value={`${document.URL}thanks`} />
