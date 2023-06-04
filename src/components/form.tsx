@@ -13,7 +13,7 @@ export default function Form() {
     e.preventDefault();
     setErrorName("")
     setErrorPhone("")
-
+    
     if (name == "")
       return setErrorName("الرجاء ادخال الاسم")
 
@@ -23,15 +23,16 @@ export default function Form() {
     if (phone == "")
       return setErrorPhone("الرجاء ادخال رقم الهاتف للتواصل")
 
-    if (!/^01[0-2,5]{1}[0-9]{8}$/.test(phone))
-      return setErrorPhone("الرجاء ادخال رقم صحيح");
-
     return (document.getElementById("form") as HTMLFormElement).submit()
   }
 
+
+
+
+
   return (
 
-    <form action="https://api.sheetmonkey.io/form/nv3q7KdX21CFQnrb6c9GCT" method="post" onSubmit={onSubmitForm} target="_blank" id="form" className="form" role="form">
+    <form action="https://api.sheetmonkey.io/form/nv3q7KdX21CFQnrb6c9GCT" method="post" onSubmit={onSubmitForm} target="_blank" id="form" className="form" role="form" acceptCharset="utf-8">
 
       <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
       <input  type="hidden"  name="x-sheetmonkey-redirect" value={`${document.URL}thanks`} />
@@ -40,7 +41,7 @@ export default function Form() {
         <small>{errorName}</small>
       </div>
 
-      <div className="form-control">
+      <div className="form-control font-[sans-serif]">
         <input type="tel" name="phone" id="phone" placeholder="رقم الهاتف" value={phone} onChange={e => setPhone(e.target.value)}  maxLength={11} minLength={11} />
         <small>{errorPhone}</small>
       </div>
