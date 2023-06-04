@@ -60,11 +60,11 @@ li {
 }
 
 .hero-arrow-img {
-  @apply w-[380px] pl-12 md:mr-[500px] md:w-[550px]
+  @apply min-w-[350px] pl-12 md:mr-[500px] md:w-[550px]
 }
 /* hero-footer */
 .hero-footer {
-  @apply text-center container pt-[55px] px-2.5 pb-5 md:pt-8 md:pr-12 md:container md:mx-auto
+  @apply text-center container pt-[45px] px-2.5 pb-5 md:pt-8 md:pr-12 md:container md:mx-auto
 }
 
 .hero-footer .line {
@@ -100,7 +100,7 @@ li {
 }
 
 .results-info img {
-  @apply w-20 h-36 md:w-40 md:h-64;
+  @apply w-[85px] h-[150px] md:w-40 md:h-64;
 }
 
 .results-info img.img-sm {
@@ -120,15 +120,15 @@ li {
 
 /* SECTION advise */
 .advise {
-  @apply text-center py-8 bg-cover bg-right relative bg-[url('@/assets/images/bg-hero.jpg')] rounded-b-[50%_3%] top-[-70px] z-10;
+  @apply text-center py-8 bg-cover bg-right relative bg-[url('@/assets/images/bg-hero.jpg')] rounded-b-[50%_3%] top-[-70px] z-[1000];
 }
 
 .advise-container {
-  @apply container relative flex justify-between mx-auto mb-8 text-right;
+  @apply container relative flex justify-between mx-auto mb-0 text-right;
 }
 
 .advise-header {
-  @apply pt-2.5 pr-2.5 pb-5 pl-8;
+  @apply pt-2.5 pr-2.5 pl-8;
 }
 
 .advise-header .head {
@@ -148,11 +148,11 @@ li {
 }
 
 .advise-header .all-line .line {
-  @apply flex items-center mb-4 text-base font-semibold text-right md:tracking-wider md:text-4xl;
+  @apply flex items-center text-base font-semibold text-right md:tracking-wider md:text-4xl;
 }
 
 .advise-header .all-line .line span {
-  @apply w-[3px] h-14 bg-[#e60f0f] ml-2 md:ml-5 rounded-[3px] md:w-[10px];
+  @apply w-[10px] h-12 bg-[#e60f0f] ml-2 md:ml-5 rounded-[3px] md:w-[10px];
 }
 
 .advise-container img {
@@ -164,11 +164,11 @@ li {
 
 /* SECTION how */
 .how {
-  @apply top-[-85px] px-2.5 pt-12 pb-5 relative bg-cover bg-center bg-[url('@/assets/images/bg-red.jpg')] rounded-b-[50%_3%] text-center whitespace-nowrap text-white
+  @apply top-[-85px] px-2 pt-12 pb-1 relative bg-cover bg-center bg-[url('@/assets/images/bg-red.jpg')] rounded-b-[50%_3%] text-center whitespace-nowrap text-white z-50
 }
 
 .how .how-header h2 {
-  @apply text-2xl md:text-6xl md:tracking-wider font-black md:mb-6
+  @apply text-3xl md:text-6xl md:tracking-wider font-black md:mb-6
 }
 
 .how .how-footer img {
@@ -180,31 +180,32 @@ li {
 }
 
 .how .how-footer .text p {
-  @apply text-base leading-9 md:text-4xl md:leading-10
+  @apply text-[16.5px] leading-[2.8rem] md:text-4xl md:leading-10
 }
+
 /* End SECTION how */
 
 
 
 /* SECTION contact */
 .contact {
-  @apply w-full bg-cover bg-center bg-[url('@/assets/images/bg-hero.jpg')] text-center overflow-hidden relative -top-[100px];
+  @apply w-full bg-cover bg-center bg-[url('@/assets/images/bg-hero.jpg')] text-center overflow-hidden relative -top-[110px];
 }
 
 
 .contact-header {
-  @apply relative w-[300px] bg-[url('@/assets/images/bg-red.jpg')] bg-center bg-cover pb-4 pl-14 rounded-lg mx-auto mt-20 mb-9 lg:pl-0;
+  @apply relative w-[300px] bg-[url('@/assets/images/bg-red.jpg')] bg-center bg-cover pb-4 pl-14 mx-auto mt-20 mb-9 lg:pl-0;
   @apply md:container md:w-[800px];
 }
 
 
 .contact-header img {
-  @apply w-[205px] absolute -top-12 -left-28 z-30;
+  @apply w-[210px] absolute top-[-4rem] left-[-7.5rem] z-30;
   @apply md:w-[250px] md:-left-48 lg:w-[350px] md:-top-24;
 } 
 
 .container-prices {
-  @apply flex flex-col overflow-hidden leading-none rounded-lg;
+  @apply flex flex-col overflow-hidden leading-none;
 }
 
 .contact-header .price-title {
@@ -212,16 +213,20 @@ li {
 }
 
 .contact-header .price {
-  @apply text-white text-[100px] font-semibold font-[sans-serif] md:text-9xl md:text-[10rem] md:py-8 py-3;
+  @apply text-white text-[100px] font-semibold font-[sans-serif] md:text-9xl md:text-[10rem] md:py-8 pt-3;
 }
 
 .contact-header .price-old {
   @apply relative inline-block overflow-hidden text-xl text-white md:text-3xl;
-  @apply after:absolute after:top-1/2 after:left-1/2 after:w-[50%] after:h-0.5 after:bg-[#dfae45] after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-[5deg];
+  @apply after:absolute after:top-1/2 after:left-1/2 after:w-[75%] after:h-0.5 after:bg-[#dfae45] after:-translate-x-1/2 after:-translate-y-1/2 after:rotate-[5deg];
+}
+
+.price-old span {
+  @apply font-[sans-serif] font-extrabold;
 }
 
 .contact-footer {
-  @apply pt-6 md:mt-20 md:mb-8;
+  @apply pt-0 md:mt-20 md:mb-8;
 }
 
 .contact-footer h4 {
@@ -235,9 +240,13 @@ li {
 .contact-footer .contact-form h2 {
   @apply py-2 text-lg bg-white;
 }
+.contact-form-shadow {
+  box-shadow: -.5px 3px 8px #0000009f;
+}
+
 
 .contact-form {
-  @apply bg-center bg-cover bg-[url('@/assets/images/bg-red.jpg')];
+  @apply bg-center bg-cover bg-[url('@/assets/images/bg-red.jpg')] mx-2.5;
 }
 
 .form {
